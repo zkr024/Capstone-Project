@@ -28,14 +28,14 @@
 
 ## Live Demo
 
-[Live Demo](https://zkr024.github.io/capstone-project/)
+[Live Demo]()
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
 
 - Go to the folder where you want to store the project, and clone the repository:
-- SSH: git@github.com:zkr024/Bootcamp-1.git
+- SSH: git@github.com:zkr024/Capstone-Project.git
 
 ## Authors
 
