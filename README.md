@@ -3,7 +3,7 @@
 - Responsive site from Mobile to desktop.
 - Based on [Cindy Shin in Behance](https://www.behance.net/adagio07) design.
 - Rock festival thematic.
-- Artist images from: 
+- Artist images from:
   _radionica_,
   _The Sun_,
   _The Rolling Stones_,
@@ -14,6 +14,8 @@
   and _Melbourne-Growpro image_
 - Icons source: [Google icons](https://fonts.google.com/icons)
 - Png images: [PNG Wing](https://www.pngwing.com/)
+
+## Video presentation [link](https://www.loom.com/share/68104a5a25ed486592e6e878a22d2e21)
 
 ## Built With:
 
@@ -28,7 +30,7 @@
 
 ## Live Demo
 
-[Live Demo](https://zkr024.github.io/Capstone-Project/)
+[Live Demo]()
 
 ## Getting Started
 
