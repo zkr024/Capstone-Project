@@ -30,7 +30,7 @@
 
 ## Live Demo
 
-[Live Demo](https://zkr024.github.io/Capstone-Project/)
+[Live Demo]()
 
 ## Getting Started
 
