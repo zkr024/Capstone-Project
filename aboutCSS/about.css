@@ -1,0 +1,141 @@
+.titleAbout {
+  font-size: 30px;
+  font-family: Cocogoose, sans-serif;
+  margin: 15px 0 0 25px;
+  color: rgba(246, 25, 1, 0.8);
+}
+
+.introAbout {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #272a31;
+  font-weight: 600;
+  padding: 17px;
+  margin: 13px;
+}
+
+.reachUs {
+  margin: 40px 0 0 25px;
+  color: #30333b;
+}
+
+.email {
+  color: #000;
+  font-weight: bolder;
+  width: fit-content;
+  margin: 5px auto;
+  border-bottom: 1px solid #000;
+}
+
+.aboutLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 530px;
+}
+
+.divTitleLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divTitleLogo h2 {
+  color: #272a31;
+  font-size: 24px;
+  margin: 40px 0 20px 0;
+}
+
+.divTitleLogo div {
+  width: 50px;
+  height: 2px;
+  background: #ec5242;
+}
+
+.aboutLogo p {
+  margin-top: 20px;
+  width: 400px;
+}
+
+.logC {
+  margin-top: 45px;
+  margin-bottom: 40px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.logoSection {
+  width: 200px;
+}
+
+.logoSection img {
+  width: 100%;
+}
+
+.past {
+  border-top: 1px solid #ccc;
+  min-width: 530px;
+}
+
+.lorem {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fullC {
+  display: flex;
+  height: 420px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sidney {
+  background: url(../images/posters/sidney.jpg);
+}
+
+.melbourne {
+  background: url(../images/posters/melbourne.jpg);
+}
+
+.sidney,
+.melbourne {
+  width: 450px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.transparent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: transparent;
+}
+
+.transparent::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 82, 66, 0.38);
+  z-index: 2;
+}
+
+.transparent h3,
+.transparent p {
+  color: #fff;
+  width: fit-content;
+  z-index: 3;
+  font-family: Cocogoose, sans-serif;
+  font-weight: lighter;
+}

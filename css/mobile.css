@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+/* Hide desktop items */
+.top {
+  display: none;
+}
+
+/* header to position the burger and close icons */
+header {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.open {
+  color: #272a31;
+  font-size: 60px;
+  margin: 15px 0 0 30px;
+}
+
+.open:hover {
+  color: #ec5242;
+  transform: scale(1.3);
+  transition: 500ms;
+}
+
+/* Background image for the front page */
+.background {
+  min-height: 615px;
+  min-width: 530px;
+  position: relative;
+  background-image: url("../images/background/cover.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.backgroundHolder {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(247, 247, 247, 0.8);
+}
+
+/* Mobile menu section */
+.mobileMenu {
+  position: fixed;
+  top: -150%;
+  transition: 500ms;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 1, 1, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.close {
+  color: #fff;
+  font-size: 60px;
+  margin: 15px 0 0 30px;
+}
+
+.listOptions {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 50px 0 0 35px;
+  width: fit-content;
+}
+
+.listOptions li {
+  padding-bottom: 25px;
+  width: fit-content;
+}
+
+.mobileLi {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+}
+
+.mobileLi,
+.date {
+  font-family: Cocogoose, sans-serif;
+  font-weight: 400;
+}
+
+.close:hover,
+.mobileLi:hover {
+  color: #ec5242;
+  transform: scale(1.3);
+  transition: 500ms;
+}
+
+/* Nav bar location in the mobile menu */
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 35px;
+  margin-right: 20px;
+  margin-top: 60px;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.navBar li {
+  margin: 10px;
+}
+
+.navBar li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 13px;
+}
+
+.navBar li a:hover {
+  color: #ec5242;
+  font-weight: bolder;
+  transition: 500ms;
+}
+
+.navIcon {
+  width: 30px;
+}
+
+.navIcon:hover {
+  transform: scale(1.3);
+  transition: 500ms;
+}
+
+.navIcon img {
+  width: 100%;
+}
+
+/* class to hide or display the mobile menu */
+.hiThere {
+  top: 0;
+  transition: 300ms;
+}
+
+/* Front screen section */
+.frontPage {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 100%;
+  height: auto;
+  color: #ec5242;
+}
+
+.hello {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 25px;
+}
+
+/* Import the font family from a local folder */
+@font-face {
+  font-family: Cocogoose;
+  src: url(../Font/Cocogoose_trial.otf);
+}
+
+.title {
+  font-size: 30px;
+  font-family: Cocogoose, sans-serif;
+  margin: 15px 0 0 25px;
+  background-image: url(../images/background/cover.jpg);
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: rgba(246, 25, 1, 0.8);
+}
+
+.intro {
+  color: #272a31;
+  font-weight: 600;
+  padding: 17px;
+  margin: 13px;
+  background: #f7f7f7;
+  border: 2px solid #fff;
+}
+
+.date {
+  margin-left: 25px;
+  color: #272a31;
+  font-size: 24px;
+}
+
+.location {
+  font-size: 15px;
+  margin: 5px 0 0 25px;
+}
+
+/* background image for the main section */
+.metalBackground {
+  background-image: url("../images/background/metaltexture.jpg");
+  min-width: 530px;
+}
+
+.metalBackgroundHolder {
+  background: rgba(200, 200, 200, 0.15);
+}
+
+/* Main program section */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainTitle,
+.divTitle h2 {
+  font-size: 24px;
+  margin: 40px 0 20px 0;
+  color: #fff;
+}
+
+.line,
+.divTitle div {
+  width: 50px;
+  height: 2px;
+  background: #ec5242;
+}
+
+/* cards inside the main section */
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 22px 20px 0 20px;
+}
+
+.bands {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  height: 120px;
+  background: transparent;
+  width: 100%;
+  padding-top: 23px;
+  margin: 7.5px;
+}
+
+/* Set transparent background to the cards */
+.bands::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 19, 0.5);
+}
+
+.bands .icon {
+  font-size: 40px;
+  margin: 23px;
+  z-index: 1;
+}
+
+.bands h3 {
+  color: #ec5242;
+  font-family: Cocogoose, sans-serif;
+  font-weight: lighter;
+  min-width: 90px;
+  width: 155px;
+  margin-right: 10px;
+  z-index: 1;
+}
+
+.bands p {
+  min-width: 211px;
+  margin-left: 13px;
+  margin-right: 13px;
+  z-index: 1;
+}
+
+/* botton inside the main section  */
+.mainButton {
+  text-decoration: none;
+  color: #fff;
+  background: #ec5242;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 310px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Information section */
+.information {
+  margin: 15px;
+  min-width: 530px;
+}
+
+.information .divTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divTitle h2 {
+  color: #272a31;
+  margin-top: 25px;
+}
+
+.divTitle div {
+  margin-bottom: 10px;
+}
+
+/* Div that contains the information - Image and details */
+.divCard {
+  display: flex;
+  justify-content: flex-start;
+  width: 517px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divImg {
+  min-width: 175px;
+  height: 170px;
+  flex-shrink: 0;
+  background: url("../images/background/chess.png") no-repeat;
+  background-size: 80px;
+  position: relative;
+}
+
+.contImg {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.contImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.divInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 25px;
+  margin-right: 35px;
+  color: #272a31;
+}
+
+/* Style the content inside the divInfo container */
+.divInfo h3 {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.divInfo h4 {
+  color: #ec5242;
+  margin-top: 5px;
+}
+
+.separate {
+  width: 20px;
+  height: 2px;
+  background: #777;
+  margin-top: 13px;
+}
+
+.divInfo p {
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+/* Footer section */
+footer {
+  background: #414246;
+  display: flex;
+  flex-direction: column;
+  min-width: 530px;
+}
+
+.sponsorCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.sponsorDiv {
+  width: 140px;
+  flex-shrink: 0;
+  height: 60px;
+  margin: 15px;
+}
+
+.sponsorImg {
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+}
+
+.logContainer {
+  width: 110px;
+}
+
+.logContainer img {
+  width: 100%;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
