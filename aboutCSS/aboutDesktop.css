@@ -29,7 +29,7 @@
 .fullC {
   flex-direction: row;
   max-width: 950px;
-  height: fit-content;
+  height: auto;
   margin: 60px auto 80px auto;
 }
 
