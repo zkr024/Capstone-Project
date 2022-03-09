@@ -15,6 +15,8 @@
 - Icons source: [Google icons](https://fonts.google.com/icons)
 - Png images: [PNG Wing](https://www.pngwing.com/)
 
+## Video presentation [link](https://www.loom.com/share/68104a5a25ed486592e6e878a22d2e21)
+
 ## Built With:
 
 - HTML.
