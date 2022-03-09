@@ -1,0 +1,42 @@
+.titleContainer,
+.sponsorCont {
+  display: none;
+}
+
+.small {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.home {
+  margin-right: 150px;
+  color: #272a31;
+}
+
+.titleAbout {
+  align-self: center;
+  font-size: 50px;
+  margin: 22px 0 0 0;
+  max-width: 700px;
+  text-align: center;
+}
+
+.introAbout {
+  max-width: 600px;
+}
+
+.fullC {
+  flex-direction: row;
+  max-width: 950px;
+  height: auto;
+  margin: 60px auto 80px auto;
+}
+
+.sidney {
+  margin-right: 5px;
+}
+
+.melbourne {
+  margin-left: 5px;
+}

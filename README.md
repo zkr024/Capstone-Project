@@ -3,7 +3,7 @@
 - Responsive site from Mobile to desktop.
 - Based on [Cindy Shin in Behance](https://www.behance.net/adagio07) design.
 - Rock festival thematic.
-- Artist images from: 
+- Artist images from:
   _radionica_,
   _The Sun_,
   _The Rolling Stones_,
